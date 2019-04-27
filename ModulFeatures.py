@@ -11,7 +11,7 @@ class Feature():
     def __init__(self, MainWindow):
         self.mainWindow = MainWindow
         self.qLabel = MainWindow.imageView #ImageViewer
-        self.fileName = "rody.jpg" # default Image
+        self.fileName = "default.jpg" # default Image
         self.pillImage = Image.open(self.fileName).convert("RGB")
         self.imageWidth, self.imageHeight = self.pillImage.size
         self.qImage = None #Set Image
